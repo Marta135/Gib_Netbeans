@@ -1,6 +1,6 @@
 
 package prueba_git;
-/** Programa que lea dos cadenas
+/** Programa que lea dos cadenas e indique cual es mayor
  * * @author marti
  */
 import java.util.Scanner;
@@ -17,6 +17,11 @@ public class Prueba_Git {
         cadena1 =teclado.next();
         System.out.print("Introudce otra cadena: ");
         cadena2 =teclado.next();
+        
+        System.out.println(cadena1.compareTo(cadena2)<0?
+                "La primera cadena introducida es mayor"
+                :cadena1.compareTo(cadena2) == 0? "Son iguales de tamaño"
+                :"La segunda cadena introducida es mayor");
         
         teclado.close();
     }
